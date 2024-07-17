@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.hero, .hero-box{
+    display: flex;
+    padding-top:1.5em;
+    font-family: "Roboto", sans-serif;
+}
+.hero-menu{
+    width: 30%;
+}
+.hero-menu-button{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5em;
+    margin-left: 6em;
+    font-weight: 300;
+}
+.hero-box{
+    padding: 0 5em 0 5em;
+    color: white;
+    background-color: black;
+}
+.hero-box-title{
+    display: flex;
+    gap: 2em;
+    padding-top: 2.5em;
+}
+.hero-title{
+    margin-top: 1em;
+}
+.hero-box-button-image{
+    margin-top: .15em
+}
+.hero-box-content{
+    margin-top: .5em;
+    font-size:4em;
+    
+}
+.hero-box-button{
+    display: flex;
+    gap: 1em;
+}
+.hero-box-button-content{
+    font-weight: 300;
+    font-size: 1.2em;
+}

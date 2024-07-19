@@ -46,10 +46,19 @@
 .product{
     height: 35vh;
     width: 35vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 .product-image-box{
     height: 20vh;
     width: 20vh;
+}
+.product-image-box-button button{
+    border: none;
+    background-color: #000000;
+    color: #FFFF;
+    padding: 0.5em;
 }
 .product-image-box img,.product-name{
    width: 100%;

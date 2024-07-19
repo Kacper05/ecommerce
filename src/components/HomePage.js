@@ -1,8 +1,12 @@
 import Hero from "./hero/Hero"
+import SalesHomePage from "./SalesHomePage/SalesHomePage"
 
 const HomePage = ()=>{
    return(
-    <Hero/>
+      <>
+        <Hero/>
+        <SalesHomePage/>
+      </>
    ) 
 }
 export default HomePage

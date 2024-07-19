@@ -1,11 +1,13 @@
 import Header from "./components/header/Header";
 import HomePage from "./components/HomePage";
-
+import { APIContextProvider } from "./context/context";
 function App() {
   return (
     <div>
-      <Header/>
-      <HomePage/>
+      <APIContextProvider>
+        <Header/>
+        <HomePage/>
+      </APIContextProvider>
     </div>
   );
 }

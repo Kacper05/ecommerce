@@ -1,3 +1,4 @@
+import CategorySelect from "./CategorySelect/CategorySelect"
 import Hero from "./hero/Hero"
 import SalesHomePage from "./SalesHomePage/SalesHomePage"
 
@@ -6,6 +7,7 @@ const HomePage = ()=>{
       <>
         <Hero/>
         <SalesHomePage/>
+        <CategorySelect/>
       </>
    ) 
 }

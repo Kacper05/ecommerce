@@ -4,6 +4,7 @@ import hearth from './hearth.png'
 import cart1 from './cart1.png'
 import search from './search.png'
 import './Header.css';
+import { Link } from "react-router-dom"
 const Header = ()=>{
     return(
         <header>    
@@ -19,7 +20,7 @@ const Header = ()=>{
             <div className="bottom-header">
                 <div className='logo'><img src={logo}/></div>
                 <div className='bottom-header-shop-menu'>
-                    <div className='bottom-header-shop-menu-button'>Home</div>
+                    <div className='bottom-header-shop-menu-button'><Link to={'/'}>Home</Link></div>
                     <div className='bottom-header-shop-menu-button'>Contact</div>
                     <div className='bottom-header-shop-menu-button'>About</div>
                     <div className='bottom-header-shop-menu-button'>Sign Up</div>

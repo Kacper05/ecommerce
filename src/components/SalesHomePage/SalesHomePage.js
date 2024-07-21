@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './SalesHomePage.css';
 import { useAPI } from '../../context/context'
 import Product from './Product';
-
+import CategorySelect from '../CategorySelect/CategorySelect';
 const Timer = ({duration}) =>{
     const [time,setTime] = useState(duration)
     useEffect(()=>{
@@ -51,17 +51,17 @@ const SalesHomePage = ()=>{
                         </div>
                     </div>
                     <div className='sales-home-page-products-gallery'>
-
-                                                {
+                            {
                                 (Object.keys(products).length > 0) ? (products.map((product)=> {
                                     if(product.id < 5){
                                         return(
-                                            <Product name={product.title} image={product.image} price={product.price}/>  
+                                            <Product key={product.id} id={product.id} name={product.title} image={product.image} price={product.price}/>  
                                         )
                                     }
                                 })): null
                             }
                     </div>
+                    <div className='sales-home-page-button'><button>View All Products</button></div>
             </div>
         )
 }

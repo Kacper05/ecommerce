@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 function Product(props){
     const [display,setDisplay] = useState('none')
@@ -9,6 +10,7 @@ function Product(props){
         setDisplay('none')
     }
     return(
+        <Link to={`product/${props.id}`} style={{textDecoration: 'none', color:'black'}}>
         <div className="product" onMouseOver={ShowButton} onMouseOut={HideButton}>
             <div className="product-image-box">
                 <img src={props.image} alt=""/>
@@ -18,10 +20,11 @@ function Product(props){
             </div>
             <div className="product-details">
                 <div className="product-name">{props.name}</div>
-                <div className="product-price">{props.price}</div>
+                <div className="product-price">${props.price}</div>
                 <div className="poduct-rating">{props.rating}</div>
             </div>
         </div>
+        </Link>
     )
 }
 export default Product
